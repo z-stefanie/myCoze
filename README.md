@@ -31,12 +31,12 @@ src/pages/Editor/
 ├── Editor.jsx              # 编辑器主组件，管理全局状态
 ├── engine/                 # 执行引擎层（纯逻辑，不依赖 React）
 │   ├── FlowEngine.js       # 流程执行引擎：逐节点执行、断点暂停/恢复
-│   ├── topologicalSort.js   # Kahn 算法拓扑排序 + 环路检测
-│   ├── validator.js         # 流程校验：连通性、必填字段、环路
-│   └── llmService.js        # 大模型调用：真实 API + 模拟响应双模式
+│   ├── topologicalSort.js  # Kahn 算法拓扑排序 + 环路检测
+│   ├── validator.js        # 流程校验：连通性、必填字段、环路
+│   └── llmService.js       # 大模型调用：真实 API + 模拟响应双模式
 ├── hooks/                  # 状态桥接层
-│   ├── useFlowExecution.js  # 引擎回调 → React 状态
-│   └── useUndoRedo.js       # 撤销重做（快照 + 双栈）
+│   ├── useFlowExecution.js # 引擎回调 → React 状态
+│   └── useUndoRedo.js      # 撤销重做（快照 + 双栈）
 ├── nodes/                  # 自定义节点组件
 └── components/             # 编辑器 UI 组件（画布、配置面板、调试面板等）
 ```
